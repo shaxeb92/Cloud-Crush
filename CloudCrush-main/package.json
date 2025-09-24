@@ -1,0 +1,10 @@
+{
+  "name": "simple-s3-website",
+  "version": "1.0.0",
+  "description": "A simple website deployed to S3 via GitHub Actions",
+  "main": "script.js",
+  "scripts": {
+  },
+  "devDependencies": {
+  }
+}
