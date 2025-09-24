@@ -35,7 +35,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' # Only deploy from main branch
+    if: github.event_name == 'workflow_dispatch' # Only deploy from main branch by mannual trigger
 
     steps:
     - name: Download artifact
