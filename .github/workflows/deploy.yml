@@ -52,5 +52,5 @@ jobs:
 
     - name: Deploy to S3
       run: |
-        aws s3 sync . s3://github-action-frontend --delete
-        echo "Deployed to https://github-action-frontend.s3-website-eu-west-1.amazonaws.com/"
+        aws s3 sync . s3://cloud-crush-bucket --delete
+        echo "Deployed to https://cloud-crush-bucket.s3-website-us-east-1.amazonaws.com/"
