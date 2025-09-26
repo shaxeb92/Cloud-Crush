@@ -31,6 +31,12 @@ jobs:
           index.html
           styles.css
           script.js
+          
+    - name: SonarCloud Scan
+      uses: SonarSource/sonarqube-scan-action@v5
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: https://sonarcloud.io
 
   deploy:
     needs: build
