@@ -37,6 +37,12 @@ jobs:
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: https://sonarcloud.io
+      with:
+        args: >
+          -Dsonar.projectKey=your-org:your-repo
+          -Dsonar.organization=your-org
+          -Dsonar.sources=.
+          -Dsonar.exclusions=node_modules/**,*.test.js,*.spec.js
 
   deploy:
     needs: build
