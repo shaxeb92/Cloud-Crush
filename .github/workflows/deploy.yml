@@ -39,7 +39,7 @@ jobs:
         SONAR_HOST_URL: https://sonarcloud.io
       with:
         args: >
-          -Dsonar.projectKey=shaxeb92:Cloud-Crush
+          -Dsonar.projectKey=shaxeb92_Cloud-Crush
           -Dsonar.organization=shaxeb92
           -Dsonar.sources=.
           -Dsonar.exclusions=node_modules/**,*.test.js,*.spec.js
