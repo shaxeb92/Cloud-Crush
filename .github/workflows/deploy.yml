@@ -39,8 +39,8 @@ jobs:
         SONAR_HOST_URL: https://sonarcloud.io
       with:
         args: >
-          -Dsonar.projectKey=your-org:your-repo
-          -Dsonar.organization=your-org
+          -Dsonar.projectKey=Shahzaib Khan:Cloud-Crush
+          -Dsonar.organization=Shahzaib Khan
           -Dsonar.sources=.
           -Dsonar.exclusions=node_modules/**,*.test.js,*.spec.js
 
