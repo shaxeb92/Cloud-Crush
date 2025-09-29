@@ -50,8 +50,3 @@ Run tests locally:
 npm install
 npm test
 ```
-
-CI/CD Working ...
-Manual trigger testing ...
-Password: Login123
-IP:213.43.12.1
